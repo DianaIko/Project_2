@@ -1,0 +1,13 @@
+.text-color{
+    color: blue;
+}
+
+.text-big{
+    font-size: 35px;
+}
+
+.element-bordered{
+    border-style: dotted;
+    border-width: 8px;
+    border-color: blue black black blue;
+}
