@@ -93,7 +93,8 @@ main{
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
-    row-gap: 40px;
+    row-gap: 50px;
+    column-gap: 50px;
 }
 
 footer{
