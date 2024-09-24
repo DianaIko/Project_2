@@ -1,5 +1,11 @@
 body{
     background-color: #4b4242;
+    display: flex;
+    flex-direction: column;
+}
+
+article{
+    display: block;
 }
 
 .text-color{
@@ -45,8 +51,12 @@ h3{
     margin: 0;
 }
 
-.p{
+p{
     margin-left: 20px;
+}
+
+p.main{
+    width: 360px;
 }
 
 a.top-nav{
@@ -60,7 +70,7 @@ section{
 
 }
 
-.banner {
+.banner{
     margin: 10px;
     width: 100%;
 }
@@ -75,6 +85,15 @@ section{
     border-style: solid;
     border-width: 8px;
     border-color: #ff0000 black black #ff0000;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
+    row-gap: 40px;
 }
 
 footer{
@@ -96,4 +115,15 @@ th, td {
     border: 3px solid #231f1f;
     padding: 3px;
     text-align: left;
+}
+
+@media (max-width: 820px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 100%;
+    }
 }
