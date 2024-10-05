@@ -4,6 +4,56 @@ body{
     flex-direction: column;
 }
 
+#menu-toggle {
+    display: none;
+}
+
+.burger-icon {
+    display: block;
+    margin-top: 15px;
+    margin-left: 10px;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+}
+
+.burger-icon span {
+    display: block;
+    background-color: #ffffff;
+    height: 2px;
+    margin-bottom: 7px;
+    border-radius: 2px;
+}
+
+/* Сховати меню за замовчуванням */
+.menu {
+    display: none;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #231f1f;
+}
+
+.menu ul {
+    padding: 20px;
+    li{
+        margin-bottom: 25px;
+        a{
+            color: white;
+            text-align: center;
+            display: block;
+            font-size: 20px;
+        }
+    }
+}
+/* Показати меню при натисканні на чекбокс */
+#menu-toggle:checked ~ .menu {
+    display: block;
+}
+
+
 article{
     display: block;
 }
@@ -16,13 +66,19 @@ article{
     font-size: 35px;
 }
 
+header a:hover {
+    padding: 10px 15px;
+    background-color: rgb(75, 66, 66);
+    transition: background-color 0.5s, padding 0.5s;
+}
 
 header{
     position: sticky;
     top: 0;
-    z-index: 10;
-    margin: 0;
-    padding: 0;
+    left: 0;
+    right: 0;
+    height: 47px;
+    background-color: #231f1f;
 }
 
 nav.top-nav{
