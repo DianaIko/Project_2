@@ -1,0 +1,18 @@
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 47px;
+  background-color: $primary-color;
+  border-bottom-style: solid;
+  border-bottom-color: $secondary-color;
+  border-width: 1px;
+  z-index: 1000;
+
+  a:hover {
+    padding: $spacing-small $spacing-medium;
+    background-color: rgb(75, 66, 66);
+    transition: background-color 0.5s, padding 0.5s;
+  }
+}

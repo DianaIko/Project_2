@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: $primary-color;
+  display: flex;
+  flex-direction: column;
+}
+
+article {
+  display: block;
+}
+
+.text-color {
+  color: $white;
+}
+
+.text-big {
+  font-size: 35px;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+h1,
+h2,
+h3,
+p,
+b {
+  color: $white;
+  text-decoration: none;
+}
+
+h3 {
+  margin: 0;
+}
+
+p {
+  margin-left: 20px;
+}
+
+p.main {
+  width: 360px;
+}
+
+section {
+  padding: $spacing-medium;
+  gap: 40px;
+}
+
+.banner {
+  margin: 10px;
+  width: 100%;
+}

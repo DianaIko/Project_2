@@ -1,0 +1,22 @@
+//@tailwind base;
+//@tailwind components;
+//@tailwind utilities;
+
+@import 'normalize';
+
+// Імпорт змінних
+@import 'variables';
+
+// Імпорт базових стилів
+@import 'base';
+
+// Імпорт компонентів
+@import 'components/header'; // імпорт стилів для header
+@import 'components/footer'; // імпорт стилів для footer
+@import 'components/menu';   // імпорт стилів для меню
+
+// Імпорт стилів макета
+@import 'layouts';
+
+// Імпорт медіа-запитів
+@import 'media';
