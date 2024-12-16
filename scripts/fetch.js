@@ -1,4 +1,6 @@
 const apiKey = 'ad9d0c0a';  //API ключ
+const url = `http://www.omdbapi.com/?t=${movieName}&apikey=ad9d0c0a`;
+
 
 // Функція для отримання даних про фільм
 async function fetchMovie() {
