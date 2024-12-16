@@ -49,3 +49,21 @@
 #menu-toggle:checked ~ .menu {
   display: block;
 }
+/* Стилі для кнопки Login */
+.login-btn {
+  padding: 5px 25px;
+  background-color: #ff0000;
+  color: white;
+  border-radius: 5px;
+  font-size: 16px;
+  position: fixed;
+  right: 10px;
+  top: 8px;
+}
+.login-btn:hover{
+    padding: 5px 25px;
+    transition: background-color 0.5s;
+}
+
+
+

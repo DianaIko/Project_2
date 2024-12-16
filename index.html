@@ -9,6 +9,8 @@
 
     <link rel="icon" href="images/image2.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/fetch.js"></script>
 
 </head>
 <body>
@@ -29,8 +31,9 @@
                 <li><a href="#">Кінотеатри</a></li>
                 <li><a href="#">Допомога</a></li>
                 <li><a href="#">Про компанію</a></li>
-            </ul>
+            </ul>пше
         </nav>
+        <a href="login.html" class="login-btn">Login</a>
     </div>
 </header>
 
@@ -84,7 +87,7 @@
 
 
 
-    <p class="element-bordered">
+    <p class="element-bordered" style="margin-left: 0">
         <b>Проєкт "Кінотеатр Multiplex" спрямований на розробку веб-сайту, що буде аналогічний офіційному сайту кінотеатру Multiplex. Мета проєкту — створити платформу, яка відображатиме основні функції та можливості оригінального сайту, включаючи розклад сеансів, онлайн-купівлю квитків, а також інформацію про новинки кіно та спеціальні пропозиції.</b>
     </p>
 
@@ -120,7 +123,22 @@
             </div>
         </article>
     </main>
+    <div class="element-bordered">
+        <h1>Інформація про фільм</h1>
+        <input type="text" id="movieSearch" style="width: 400px;" placeholder="Введіть назву фільму">
+        <button onclick="fetchMovie()" style="width: 200px;" >Пошук</button>
 
+        <div id="movieDetails">
+            <h2 id="title"></h2>
+            <img id="poster" src="" style="max-width: 200px;">
+            <p><strong>Year:</strong> <span id="year"></span></p>
+            <p><strong>Rated:</strong> <span id="rated"></span></p>
+            <p><strong>Runtime:</strong> <span id="runtime"></span></p>
+            <p><strong>Genre:</strong> <span id="genre"></span></p>
+            <p><strong>Director:</strong> <span id="director"></span></p>
+            <p><strong>Plot:</strong> <span id="plot"></span></p>
+        </div>
+    </div>
     <table class="text-color">
         <thead>
         <tr>
